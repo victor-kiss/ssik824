@@ -4,7 +4,6 @@ const nextConfig = {
     appDir: true,
   },
   trailingSlash:true,
-  SWCMinify:true
 }
 
 module.exports = nextConfig
