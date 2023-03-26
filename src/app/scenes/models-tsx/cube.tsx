@@ -1,5 +1,5 @@
 "use client"
-
+import React from 'react'
 import { Box,GradientTexture } from "@react-three/drei"
 import { useFrame } from "@react-three/fiber"
 
