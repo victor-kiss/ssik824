@@ -1,6 +1,5 @@
 "use client"
 
-import React  from "react"
 import { Sphere ,GradientTexture } from "@react-three/drei"
 import { useFrame } from "@react-three/fiber"
 
