@@ -6,7 +6,7 @@ import FlexWrapper from '../layout/flex-wrapper'
 import Card from '../components/card/card'
 import Footer from '../components/footer/footer'
 import Carousel from 'react-bootstrap/Carousel';
-
+import Image from 'next/image'
 
 export default function Certificados() {
   return (
@@ -23,36 +23,36 @@ export default function Certificados() {
           <FlexWrapper direction='column' align='center' justify='center'>
           <Carousel variant="dark" indicators={false}>
         <Carousel.Item>
-            <img
-            className="d-block cropped"
+            <Image width={650} height={450}
+            className="cropped"
             src="/diploma-ingles.jpg"
             alt="Diploma Ingles"
             />
         </Carousel.Item>
         <Carousel.Item>
-            <img
-            className="d-block cropped"
+            <Image width={650} height={450}
+            className="cropped"
             src="/diploma-marketing-digital.jpg"
             alt="Diploma Marketing Digital"
             />
         </Carousel.Item>
         <Carousel.Item>
-            <img
-            className="d-block cropped"
+            <Image width={650} height={450}
+            className="cropped"
             src="/diploma-web-design.jpg"
             alt="Diploma Web Design"
             />
       </Carousel.Item>
       <Carousel.Item>
-            <img
-            className="d-block cropped"
+            <Image width={650} height={450}
+            className="cropped"
             src="/diploma-web1.jpg"
             alt="Diploma Desenvolvimento Web 1"
             />
       </Carousel.Item>
       <Carousel.Item>
-            <img
-            className="d-block cropped"
+            <Image width={650} height={450}
+            className="cropped"
             src="/diploma-web2.png"
             alt="Diploma Desenvolvimento Web 2"
             />
