@@ -1,6 +1,5 @@
 "use client"
 
-import React from 'react'
 import Navbar from '../components/navbar/navbar'
 import GridWrapper from '../layout/grid-wrapper'
 import FlexWrapper from '../layout/flex-wrapper'
