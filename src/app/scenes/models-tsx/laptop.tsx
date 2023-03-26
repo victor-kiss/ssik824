@@ -1,4 +1,3 @@
-import React from 'react';
 import { useFrame,useLoader } from '@react-three/fiber';
 import {FBXLoader} from  'three/examples/jsm/loaders/FBXLoader'
 
