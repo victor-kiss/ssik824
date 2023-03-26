@@ -1,6 +1,5 @@
 "use client"
 
-import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import Cube from './models-tsx/cube'
 import { Preload } from '@react-three/drei'
