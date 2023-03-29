@@ -19,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
       </head>
       <body className={inter.className} id="bg-dark">
