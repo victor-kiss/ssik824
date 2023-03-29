@@ -38,8 +38,8 @@ export default function Certificados() {
       <header>
         <Navbar/>
       </header>
-      <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true}>
-          <FlexWrapper direction='column' align='baseline' justify='center'>
+      <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
+          <FlexWrapper direction='column' align='baseline' justify='center' width='auto' height="auto" position='inhreit' margin='0' padding="0" wrap="wrap">
           <h1>Conhecimentos</h1>
           <p>Através da realização de cursos e projetos pude construir uma base de habilidades que frequentemente uso na minha área de atuação, os conhecimentos variam de acordo com meus gostos e interesses mas todos são voltados para a área de tecnologia e estou frenquentemente aprimorando e aprendendo novas coisas para aumentar cada vez mais minha base de conhecimento. Veja minhas habilidades abaixo:</p>
 
@@ -59,10 +59,10 @@ export default function Certificados() {
         </FlexWrapper>
          <SphereScene/>
       </GridWrapper>
-      <FlexWrapper width="100%" height="100vh" align='center' justify='center'>
-        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="#"/>
-        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='#'/>
-        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='#'/>
+      <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction="row"  margin='0' padding='0' wrap='no-wrap' position='inherit'>
+        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados" />
+        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
+        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites'/>
       </FlexWrapper>
       <Footer/>
     </>
