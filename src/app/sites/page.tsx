@@ -1,3 +1,4 @@
+
 "use client"
 
 import Navbar from '../components/navbar/navbar'
@@ -95,8 +96,8 @@ export default function Sites() {
       <header>
         <Navbar/>
       </header>
-      <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true}>
-          <FlexWrapper direction='column' align='baseline' justify='center'>
+      <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
+          <FlexWrapper direction='column' align='baseline' justify='center' width="auto" height="auto" position="inhreit" wrap="wrap" margin="0" padding="0">
           <h1>Sites</h1>
           <p>Aqui estão alguns projetos feitos por mim ao longo de meus estudos, usam diversas tecnologias além de abordar diversos temas, os projetos estão em ordem cronológica, desde meu primeiro até o mais recente:</p>
 
@@ -117,12 +118,11 @@ export default function Sites() {
         </FlexWrapper>
          <LaptopScene/>
       </GridWrapper>
-      <FlexWrapper width="100%" height="100vh" align='center' justify='center'>
-        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="#"/>
-        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='#'/>
-        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='#'/>
+      <FlexWrapper direction="row" width="100%" height="100vh" align='center' justify='center' position="inhreit" wrap="wrap" margin="0" padding="0">
+        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados"/>
+        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
+        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites'/>
       </FlexWrapper>
       <Footer/>
     </>
   )
-}
