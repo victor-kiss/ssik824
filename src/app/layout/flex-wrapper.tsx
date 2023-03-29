@@ -1,29 +1,27 @@
 import styled from 'styled-components'
 
 interface StyleProps{
-    position?: string;
-    width?:string;
-    height?:string;
-    wrap?:string;
-    direction?:string;
-    justify?:string;
-    align?:string;
-    margin?:string;
-    padding?:string;
+    position: string;
+    width:string;
+    height:string;
+    wrap:string;
+    direction:string;
+    justify:string;
+    align:string;
+    margin:string;
+    padding:string;
 }
 
 const FlexWrapperContainer = styled.div<StyleProps>`
-width:${props => props.width || "auto"};
-height:${props => props.height|| "auto"};
+width:${props => props.width};
+height:${props => props.height};
 display:flex;
-flex-wrap:${props => props.wrap || "wrap"};
-flex-direction:${props => props.direction || "row"};
-justify-content:${props => props.justify || "baseline"};
-align-items:${props => props.align || "baseline"};
-margin:${props => props.margin || "0px"};
-padding:${props => props.padding || "0px"};
-background-color:${props => props.color || "none"};
-
+flex-wrap:${props => props.wrap};
+flex-direction:${props => props.direction};
+justify-content:${props => props.justify};
+align-items:${props => props.align};
+margin:${props => props.margin};
+padding:${props => props.padding};
 @media(max-width:576px){
     width:100%;
     flex-direction:column;
@@ -35,23 +33,8 @@ background-color:${props => props.color || "none"};
 }
 
 `
-interface FlexWrapperProps {
-    width?: string;
-    height?: string;
-    wrap?: string;
-    direction?: string;
-    justify?: string;
-    align?: string;
-    margin?: string;
-    padding?: string;
-    color?: string;
-    position?: string;
-    children?: React.ReactNode;
-}
-
-const FlexWrapper:React.FC<FlexWrapperProps> = ({
+const FlexWrapper = ({
     position,
-    color,
     width,
     height,
     wrap,
@@ -61,10 +44,22 @@ const FlexWrapper:React.FC<FlexWrapperProps> = ({
     margin,
     padding,
     children,
+}:{
+    position:string,
+    width:string,
+    height:string,
+    wrap:string,
+    direction:string,
+    justify:string,
+    align:string,
+    margin:string,
+    padding:string,
+    children:React.ReactNode,
 }) =>(
-    <FlexWrapperContainer position={position} color={color} width={width} height={height} margin={margin} padding={padding} wrap={wrap} direction={direction} justify={justify} align={align}>
+    <FlexWrapperContainer position={position}  width={width} height={height} margin={margin} padding={padding} wrap={wrap} direction={direction} justify={justify} align={align}>
         {children}
     </FlexWrapperContainer>
 )
 
 export default FlexWrapper
+
