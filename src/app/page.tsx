@@ -1,11 +1,9 @@
 "use client"
-import Navbar from './components/navbar/navbar'
 import GridWrapper from './layout/grid-wrapper'
 import FlexWrapper from './layout/flex-wrapper'
 
 import CubeScene from './scenes/cube-scene'
 import Card from './components/card/card'
-import Footer from './components/footer/footer'
 
 import styled from 'styled-components'
 
@@ -31,10 +29,7 @@ const LinkButton = styled.a`
 export default function Home() {
   return (
     <>
-      <header>
-        <Navbar/>
-      </header>
-      <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
+      <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={false}>
           <FlexWrapper direction='column' align='baseline' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap' position='inherit'>
           <h1>Visão Geral</h1>
           <p>Meu nome é Victor Kiss, mas pode me chamar de ssik, tenho 18 anos e sou desenvolvedor front-end! Meu foco é na criação de interfaces intuitivas, com um bom design e código.Minha jornada em programação começou no ano de 2020, quando tive vontade de entender mais sobre tecnologia e me aprofundei na área de desenvolvimento web. No mesmo ano saiu meu primeiro projeto a <a href="https://victor-kiss.github.io/webdex/" rel="noreferrer" target="_blank">webdex</a>, esse projeto marca o início da minha constante evolução em front-end!</p>
@@ -50,9 +45,9 @@ export default function Home() {
         <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
         <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites'/>
       </FlexWrapper>
-      <Footer/>
     </>
   )
 }
+
 
 
