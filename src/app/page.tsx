@@ -29,7 +29,7 @@ const LinkButton = styled.a`
 export default function Home() {
   return (
     <>
-      <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={false}>
+      <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
           <FlexWrapper direction='column' align='baseline' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap' position='inherit'>
           <h1>Visão Geral</h1>
           <p>Meu nome é Victor Kiss, mas pode me chamar de ssik, tenho 18 anos e sou desenvolvedor front-end! Meu foco é na criação de interfaces intuitivas, com um bom design e código.Minha jornada em programação começou no ano de 2020, quando tive vontade de entender mais sobre tecnologia e me aprofundei na área de desenvolvimento web. No mesmo ano saiu meu primeiro projeto a <a href="https://victor-kiss.github.io/webdex/" rel="noreferrer" target="_blank">webdex</a>, esse projeto marca o início da minha constante evolução em front-end!</p>
