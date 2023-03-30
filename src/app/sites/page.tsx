@@ -1,11 +1,10 @@
 
 "use client"
 
-import Navbar from '../components/navbar/navbar'
+
 import GridWrapper from '../layout/grid-wrapper'
 import FlexWrapper from '../layout/flex-wrapper'
 import Card from '../components/card/card'
-import Footer from '../components/footer/footer'
 import Carousel from 'react-bootstrap/Carousel';
 import LaptopScene from '../scenes/laptop-scene'
 import styled from 'styled-components'
@@ -93,9 +92,6 @@ const projectData = [
 export default function Sites() {
   return (
     <>
-      <header>
-        <Navbar/>
-      </header>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
           <FlexWrapper direction='column' align='baseline' justify='center' width="auto" height="auto" position="inhreit" wrap="wrap" margin="0" padding="0">
           <h1>Sites</h1>
@@ -123,7 +119,6 @@ export default function Sites() {
         <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
         <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites'/>
       </FlexWrapper>
-      <Footer/>
     </>
   )
 }
