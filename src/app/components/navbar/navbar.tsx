@@ -3,12 +3,10 @@
 import {Navbar,Nav} from 'react-bootstrap'
 
 
-import {NavbarStyle} from './style'
 
 export default function navbar() {
     return (
         <>
-        <NavbarStyle>
             <Navbar expand="lg"> 
             <Navbar.Brand href="/" className="fw-bold text-light m-2">
                 824
@@ -27,7 +25,6 @@ export default function navbar() {
         </Navbar.Collapse>
         
         </Navbar>
-        </NavbarStyle>
     </>
     )
 }
