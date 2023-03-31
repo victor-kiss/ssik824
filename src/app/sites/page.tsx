@@ -4,7 +4,7 @@
 
 import GridWrapper from '../layout/grid-wrapper'
 import FlexWrapper from '../layout/flex-wrapper'
-import Navbar from '../components/navbar'
+import Navbar from '../components/navbar/navbar'
 import Card from '../components/card/card'
 import Carousel from 'react-bootstrap/Carousel';
 import LaptopScene from '../scenes/laptop-scene'
