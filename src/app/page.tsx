@@ -3,7 +3,7 @@ import GridWrapper from './layout/grid-wrapper'
 import FlexWrapper from './layout/flex-wrapper'
 
 import CubeScene from './scenes/cube-scene'
-import Navbar from './components/navbar'
+import Navbar from './components/navbar/navbar'
 import Card from './components/card/card'
 
 import styled from 'styled-components'
