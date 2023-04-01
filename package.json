@@ -26,9 +26,7 @@
     "react-dom": "18.2.0",
     "styled-components": "^5.3.9",
     "three": "^0.150.1",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+     "@types/styled-components": "^5.1.26"
   },
-  "devDependencies": {
-    "@types/styled-components": "^5.1.26"
-  }
 }
