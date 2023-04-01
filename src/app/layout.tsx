@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './globals.css'
+import Navbar from './components/navbar/navbar';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] })
 import { Metadata } from 'next'
@@ -22,6 +23,9 @@ export default function RootLayout({
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
       </head>
       <body className={inter.className} id="bg-dark">
+      <header>
+        <Navbar/>
+      </header>
         {children}
         <footer className='footer'>
         <span>Desenvolvido com  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EA5455" className="bi bi-heart-fill" viewBox="0 0 16 16">
