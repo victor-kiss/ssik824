@@ -1,20 +1,10 @@
 "use client"
 
 import {Navbar,Nav} from 'react-bootstrap'
-import styled from 'styled-components'
-
-const NavbarStyle = styled.nav`
-  nav.navbar{
-  width:auto;
-  padding:5px;
-  margin-bottom:60px;
-}
-`
 
 
 export default function navbar() {
     return (
-        <NavbarStyle>
             <Navbar expand="lg"> 
             <Navbar.Brand href="/" className="fw-bold text-light m-2">
                 824
@@ -33,6 +23,5 @@ export default function navbar() {
         </Navbar.Collapse>
         
         </Navbar>
-    </NavbarStyle>
     )
 }
