@@ -3,7 +3,6 @@
 
 import GridWrapper from '../layout/grid-wrapper'
 import FlexWrapper from '../layout/flex-wrapper'
-import Navbar from '../components/navbar/navbar'
 import Card from '../components/card/card'
 import Carousel from 'react-bootstrap/Carousel';
 import SphereScene from '../scenes/sphere-scene'
@@ -35,9 +34,6 @@ const skills:String[] = ["html", "css", "javascript", "react", "next.js", "node"
 export default function Certificados() {
   return (
     <>
-      <header>
-        <Navbar/>
-      </header>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
           <FlexWrapper direction='column' align='baseline' justify='center' width='auto' height="auto" position='inhreit' margin='0' padding="0" wrap="wrap">
           <h1>Conhecimentos</h1>
