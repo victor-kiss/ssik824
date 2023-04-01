@@ -3,7 +3,6 @@ import GridWrapper from './layout/grid-wrapper'
 import FlexWrapper from './layout/flex-wrapper'
 
 import CubeScene from './scenes/cube-scene'
-import Navbar from './components/navbar/navbar'
 import Card from './components/card/card'
 
 import styled from 'styled-components'
@@ -30,9 +29,6 @@ const LinkButton = styled.a`
 export default function Home() {
   return (
     <>
-    <header>
-      <Navbar/>
-    </header>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
           <FlexWrapper direction='column' align='baseline' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap' position='inherit'>
           <h1>Visão Geral</h1>
