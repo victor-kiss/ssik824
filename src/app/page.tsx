@@ -16,7 +16,7 @@ const LinkButton = styled.a`
   background:#aaadff;
   display:block;
   margin:10px 0;
-  font-weight:100;
+  font-weight:bold;
 
   &:hover{
    font-weight:bold;
