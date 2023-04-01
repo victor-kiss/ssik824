@@ -2,7 +2,6 @@
 
 import GridWrapper from '../layout/grid-wrapper'
 import FlexWrapper from '../layout/flex-wrapper'
-import Navbar from '../components/navbar/navbar'
 import Card from '../components/card/card'
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image'
@@ -10,9 +9,6 @@ import Image from 'next/image'
 export default function Certificados() {
   return (
     <>
-      <header>
-        <Navbar/>
-      </header>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={false} padding="0">
           <FlexWrapper direction='column' align='baseline' justify='center' height='auto' margin='0' padding='0' wrap='no-wrap' position='inherit' width='auto'>
           <h1>Certificados</h1>
