@@ -26,10 +26,10 @@ const CardWrapper = styled.div`
 
     a{
         color:#FFF;
-        background:#696eff;
+        background:#aaadff;
         padding:1rem 1.5rem;
         border-radius:10px;
-        font-weight:100;
+        font-weight:bold;
     }
     @media screen and (max-width: 768px){
         position:relative;
