@@ -13,7 +13,7 @@ const LinkButton = styled.a`
   text-decoration:none;
   border-radius:10px;
   padding:0.8rem 1.2rem;
-  background:#93aaff;
+  background:##5f81ff;
   display:block;
   margin:10px 0;
   font-weight:bold;
