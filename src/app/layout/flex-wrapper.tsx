@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 interface StyleProps{
-    position: string;
     width:string;
     height:string;
     wrap:string;
@@ -34,7 +33,6 @@ padding:${props => props.padding};
 
 `
 const FlexWrapper = ({
-    position,
     width,
     height,
     wrap,
@@ -45,7 +43,6 @@ const FlexWrapper = ({
     padding,
     children,
 }:{
-    position:string,
     width:string,
     height:string,
     wrap:string,
@@ -56,7 +53,7 @@ const FlexWrapper = ({
     padding:string,
     children:React.ReactNode,
 }) =>(
-    <FlexWrapperContainer position={position}  width={width} height={height} margin={margin} padding={padding} wrap={wrap} direction={direction} justify={justify} align={align}>
+    <FlexWrapperContainer  width={width} height={height} margin={margin} padding={padding} wrap={wrap} direction={direction} justify={justify} align={align}>
         {children}
     </FlexWrapperContainer>
 )
