@@ -26,7 +26,7 @@ const CardWrapper = styled.div`
 
     a{
         color:#FFF;
-        background:#aaadff;
+        background:#696eff;
         padding:1rem 1.5rem;
         border-radius:10px;
         font-weight:bold;
