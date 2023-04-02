@@ -39,7 +39,7 @@ const CardWrapper = styled.div`
     }
 `
 
-const Card:React.FC = ({
+const Card = ({
     title,
     description,
     link
