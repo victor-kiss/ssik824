@@ -24,7 +24,7 @@ nav.navbar:before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(-45deg, #696eff 0%, #466dff 100% );
+  background: linear-gradient(90deg, rgba(113,44,249,1) 0%, rgba(123,143,237,1) 100%);
   transform: translate3d(0px, 5px, 0) scale(1);
   filter: blur(20px);
   opacity: var(0.7);
