@@ -26,7 +26,7 @@ const CardWrapper = styled.div`
 
     a{
         color:#FFF;
-        background:#6300FA;
+        background:#712CF9;
         padding:1rem 1.5rem;
         border-radius:10px;
         font-weight:bold;
@@ -39,17 +39,15 @@ const CardWrapper = styled.div`
     }
 `
 
-interface CardProps{
-    title: string;
-    description: string;
-    link:string
-}
-
-const Card:React.FC<CardProps> = ({
+const Card:React.FC = ({
     title,
     description,
     link
-}) =>(
+}:{
+    title:string,
+    description:string,
+    link:string
+   }) =>(
     <CardWrapper>
         <span>{title}</span>
         <p>{description}</p>
