@@ -13,7 +13,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <meta name="author" content="ssik824"/>
-        <meta name="description" content="Venha conhecer um pouco mais sobre ssik824!">
+        <meta name="description" content="Venha conhecer um pouco mais sobre ssik824!"/>
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
         <meta name="keywords" content="victor kiss, ssik824, desenvolvedor web, front-end, web, web-design, web projects, projetos web, github projects"/>
         <meta name="robots" content="index, follow"/>
