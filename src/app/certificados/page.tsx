@@ -1,12 +1,12 @@
 "use client"
-
-import GridWrapper from '../layout/grid-wrapper'
-import FlexWrapper from '../layout/flex-wrapper'
-import Card from '../components/card/card'
+import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image'
 
 export default function Certificados() {
+  const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'))
+  const GridWrapper = dynamic(() => import('../layout/grid-wrapper'))
+  const Card = dynamic(() => import('../components/card/card'))
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={false} padding="0">
@@ -16,9 +16,9 @@ export default function Certificados() {
           <p>O conteúdo dos cursos variam de acordo com meus interesses e gostos.</p>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' height='auto' margin='0' padding='0' wrap='no-wrap' width='auto'>
-          <Carousel variant="dark" indicators={false}>
+          <Carousel variant="dark" indicators={false} slide={false}>
         <Carousel.Item>
-            <Image width={650} height={450}
+            <Image width={650} height={450} 
             className="cropped"
             src="/diploma-ingles.jpg"
             alt="Diploma Ingles"
@@ -63,4 +63,3 @@ export default function Certificados() {
     </>
   )
 }
-
