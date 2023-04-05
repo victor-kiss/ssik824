@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './globals.css'
 import Navbar from './components/navbar/navbar';
 import { Inter } from 'next/font/google';
@@ -21,7 +22,6 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossOrigin="anonymous"/>
       </head>
       <body className={inter.className} id="bg-dark">
       <header>
