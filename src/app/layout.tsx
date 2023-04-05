@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import Navbar from './components/navbar/navbar';
 import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'] })
 import { Metadata } from 'next';
 
+const inter = Inter({ subsets: ['latin'] });
 export const metadata:Metadata = {
     title:'ssik824',
     authors:[{name:'ssik824'}],
