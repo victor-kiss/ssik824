@@ -27,10 +27,10 @@ const SkillsCard = styled.div`
 const skills:String[] = ["html", "css", "javascript", "react", "next.js", "node", "bootstrap","react bootstrap","web-design","google search console","ui/ux","SEO","git","github","windows","mac OS","linux","canva","photoshop express"]
 
 export default function Conhecimentos() {
-  const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'))
-  const GridWrapper = dynamic(() => import('../layout/grid-wrapper'))
-  const SphereScene = dynamic(() => import('../scenes/sphere-scene'))
-  const Card = dynamic(() => import('../components/card/card'))
+  const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
+  const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
+  const SphereScene = dynamic(() => import('../scenes/sphere-scene'));
+  const Card = dynamic(() => import('../components/card/card'));
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
