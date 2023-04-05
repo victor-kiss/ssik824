@@ -18,7 +18,7 @@ export default function RootLayout({
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
           <title>ssik824</title>
       </head>
-      <body className={inter.className} id="bg-dark">
+      <body id="bg-dark">
       <header>
         <Navbar/>
       </header>
