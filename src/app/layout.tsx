@@ -19,7 +19,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow"/>
           <title>ssik824</title>
       </head>
-      <body classname={inter.className} id="bg-dark">
+      <body className={inter.className} id="bg-dark">
       <header>
         <Navbar/>
       </header>
