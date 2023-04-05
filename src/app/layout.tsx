@@ -1,6 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './globals.css'
 import Navbar from './components/navbar/navbar';
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] })
+import { Metadata } from 'next'
+
+export const metadata:Metadata = {
+    title:'ssik824',
+    authors:[{name:'ssik824'}],
+    description:'Venha conhecer um pouco mais sobre ssik824!',
+    generator:'victor kiss, ssik824, desenvolvedor web, front-end, web, web-design, web projects, projetos web, github projects'
+}
+
 
 export default function RootLayout({
   children,
@@ -10,15 +21,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <meta name="author" content="ssik824"/>
-        <meta name="description" content="Venha conhecer um pouco mais sobre ssik824!"/>
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
-        <meta name="keywords" content="victor kiss, ssik824, desenvolvedor web, front-end, web, web-design, web projects, projetos web, github projects"/>
-        <meta name="robots" content="index, follow"/>
-        <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
-          <title>ssik824</title>
       </head>
-      <body id="bg-dark">
+      <body className={inter.className} id="bg-dark">
       <header>
         <Navbar/>
       </header>
