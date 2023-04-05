@@ -12,7 +12,7 @@ export default function SphereModel() {
         ref.current.rotation.y += 0.002 
     })
     return (
-        <Sphere  ref={ref} receiveShadow={true} scale={2.5}>
+        <Sphere  ref={ref} scale={2.5}>
             <meshBasicMaterial wireframe={true}>
                 <GradientTexture stops={[0,1]} colors={['#696eff','#466dff']} />
             </meshBasicMaterial>
