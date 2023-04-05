@@ -1,10 +1,5 @@
 "use client"
-import GridWrapper from './layout/grid-wrapper'
-import FlexWrapper from './layout/flex-wrapper'
-
-import CubeScene from './scenes/cube-scene'
-import Card from './components/card/card'
-
+import dynamic from 'next/dynamic'
 import styled from 'styled-components'
 
 
@@ -13,10 +8,10 @@ const LinkButton = styled.a`
   text-decoration:none;
   border-radius:10px;
   padding:0.8rem 1.2rem;
-  background:#712CF9;
+  background:#aaadff;
   display:block;
   margin:10px 0;
-  font-weight:bold;
+  font-weight:100;
 
   &:hover{
    font-weight:bold;
@@ -27,6 +22,10 @@ const LinkButton = styled.a`
 `
 
 export default function Home() {
+  const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'))
+  const GridWrapper = dynamic(() => import('./layout/grid-wrapper'))
+  const CubeScene = dynamic(() => import('./scenes/cube-scene'))
+  const Card = dynamic(() => import('./components/card/card'))
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
@@ -48,7 +47,3 @@ export default function Home() {
     </>
   )
 }
-
-
-
-
