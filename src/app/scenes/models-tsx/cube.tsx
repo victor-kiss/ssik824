@@ -12,7 +12,7 @@ export default function Cube() {
         ref.current.rotation.y += 0.002 
     })
     return (
-        <Box args={[10, 10, 10]} ref={ref} receiveShadow={true} scale={1}>
+        <Box args={[10, 10, 10]} ref={ref} scale={1}>
             <meshBasicMaterial wireframe={true}>
                 <GradientTexture stops={[0,1]} colors={['#696eff','#466dff']} />
             </meshBasicMaterial>
