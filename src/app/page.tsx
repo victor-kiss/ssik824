@@ -22,9 +22,9 @@ const LinkButton = styled.a`
 `
 
 export default function Home() {
-  const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'))
-  const GridWrapper = dynamic(() => import('./layout/grid-wrapper'))
-  const CubeScene = dynamic(() => import('./scenes/cube-scene'))
+  const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
+  const GridWrapper = dynamic(() => import('./layout/grid-wrapper'));
+  const CubeScene = dynamic(() => import('./scenes/cube-scene'));
   const Card = dynamic(() => import('./components/card/card'))
   return (
     <>
