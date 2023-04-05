@@ -11,7 +11,7 @@ export default function Laptop(){
         ref.current.rotation.y += 0.002
     })
     return(
-        <mesh ref={ref} receiveShadow={true} scale={0.4}>
+        <mesh ref={ref} scale={0.4}>
             <primitive object={model}/>
         </mesh>
     )
