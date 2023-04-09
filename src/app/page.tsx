@@ -24,7 +24,6 @@ const LinkButton = styled.a`
 export default function Home() {
   const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('./layout/grid-wrapper'));
-  const CubeScene = dynamic(() => import('./scenes/cube-scene'));
   const Card = dynamic(() => import('./components/card/card'));
   return (
     <>
@@ -37,7 +36,9 @@ export default function Home() {
           <LinkButton href={process.env.GITHUB} rel="noreferrer" target="_blank">GitHub</LinkButton>
           <LinkButton href={process.env.CODEPEN} rel="noreferrer" target="_blank">Code Pen</LinkButton>
           </FlexWrapper>
-          <Image src="/home.gif" width={650} height={450} className="cropped" alt="home gif" />
+          <div>
+            <Image src="/home.gif" width={650} height={450} className="cropped" alt="home gif" />
+        </div>
       </GridWrapper>
       <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction='row'  margin='0' padding='0' wrap='no-wrap'>
         <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados"/>
