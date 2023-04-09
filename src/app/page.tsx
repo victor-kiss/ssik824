@@ -1,7 +1,7 @@
 "use client"
 import dynamic from 'next/dynamic'
 import styled from 'styled-components'
-
+import Image from 'next/image'
 
 const LinkButton = styled.a`
   color:#FFF;
@@ -37,7 +37,7 @@ export default function Home() {
           <LinkButton href={process.env.GITHUB} rel="noreferrer" target="_blank">GitHub</LinkButton>
           <LinkButton href={process.env.CODEPEN} rel="noreferrer" target="_blank">Code Pen</LinkButton>
           </FlexWrapper>
-          <CubeScene/>
+          <Image src="/home.gif" width={650} height={450} className="cropped"/>
       </GridWrapper>
       <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction='row'  margin='0' padding='0' wrap='no-wrap'>
         <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados"/>
