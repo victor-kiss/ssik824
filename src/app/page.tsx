@@ -37,7 +37,7 @@ export default function Home() {
           <LinkButton href={process.env.CODEPEN} rel="noreferrer" target="_blank">Code Pen</LinkButton>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
-            <Image src="/home.gif" width={750} height={550} className="cropped" alt="home gif" />
+            <Image src="/ssik1.png" width={750} height={550} className="cropped" alt="home gif" />
         </FlexWrapper>
       </GridWrapper>
       <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction='row'  margin='0' padding='0' wrap='no-wrap'>
