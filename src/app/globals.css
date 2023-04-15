@@ -140,7 +140,7 @@ footer.footer > svg{
   img.cropped{
     position:relative;
     max-width:350px;
-    max-height:200px;
+    max-height:250px;
     border-radius: 15px;
   }
   canvas{
