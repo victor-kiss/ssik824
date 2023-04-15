@@ -1,3 +1,4 @@
+"use client"
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
