@@ -1,7 +1,7 @@
 "use client"
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Certificados() {
   const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
@@ -22,35 +22,35 @@ export default function Certificados() {
             className="cropped"
             src="/diploma-ingles.jpg"
             alt="Diploma Ingles"
-            loading={'eager'} />
+             />
         </Carousel.Item>
         <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-marketing-digital.jpg"
             alt="Diploma Marketing Digital"
-            loading={'eager'} />
+           />
         </Carousel.Item>
         <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-web-design.jpg"
             alt="Diploma Web Design"
-            loading={'eager'} />
+            />
       </Carousel.Item>
       <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-web1.jpg"
             alt="Diploma Desenvolvimento Web 1"
-            loading={'eager'} />
+           />
       </Carousel.Item>
       <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-web2.png"
             alt="Diploma Desenvolvimento Web 2"
-            loading={'eager'} />
+            />
       </Carousel.Item>
     </Carousel>
           </FlexWrapper>
