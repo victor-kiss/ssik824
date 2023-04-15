@@ -1,7 +1,7 @@
 "use client"
-import dynamic from 'next/dynamic'
-import styled from 'styled-components'
-import Image from 'next/image'
+import dynamic from 'next/dynamic';
+import styled from 'styled-components';
+import Image from 'next/image';
 
 const LinkButton = styled.a`
   color:#FFF;
@@ -18,7 +18,7 @@ const LinkButton = styled.a`
    transition:.1s ease-in-out;
    color:#FFF;
    letter-spacing:1px;
-  };
+  }
 `
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
           <LinkButton href={process.env.CODEPEN} rel="noreferrer" target="_blank">Code Pen</LinkButton>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
-            <Image src="/ssik1.png" width={800} height={600} className="cropped" alt="home image" />
+            <Image src="/ssik1.png" width={800} height={600} className="cropped" alt="home image" loading={'eager'}/>
         </FlexWrapper>
       </GridWrapper>
       <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction='row'  margin='0' padding='0' wrap='no-wrap'>
