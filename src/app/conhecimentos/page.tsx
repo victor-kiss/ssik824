@@ -52,7 +52,9 @@ export default function Conhecimentos() {
             }
         </Carousel>
         </FlexWrapper>
-          <Image src="/ssik2.png" width={800} height={600} className="cropped" alt="home image" loading={'eager'}/>
+          <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
+            <Image src="/ssik2.png" width={800} height={600} className="cropped" alt="home image" loading={'eager'}/>
+        </FlexWrapper>
       </GridWrapper>
       <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction="row"  margin='0' padding='0' wrap='no-wrap'>
         <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados" />
