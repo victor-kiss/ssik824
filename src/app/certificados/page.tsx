@@ -22,35 +22,35 @@ export default function Certificados() {
             className="cropped"
             src="/diploma-ingles.jpg"
             alt="Diploma Ingles"
-            loading={'eager'}/>
+            loading={'eager'} />
         </Carousel.Item>
         <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-marketing-digital.jpg"
             alt="Diploma Marketing Digital"
-            loading={'eager'}/>
+            loading={'eager'} />
         </Carousel.Item>
         <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-web-design.jpg"
             alt="Diploma Web Design"
-            loading={'eager'}/>
+            loading={'eager'} />
       </Carousel.Item>
       <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-web1.jpg"
             alt="Diploma Desenvolvimento Web 1"
-            loading={'eager'}/>
+            loading={'eager'} />
       </Carousel.Item>
       <Carousel.Item>
             <Image width={650} height={450}
             className="cropped"
             src="/diploma-web2.png"
             alt="Diploma Desenvolvimento Web 2"
-            loading={'eager'}/>
+            loading={'eager'} />
       </Carousel.Item>
     </Carousel>
           </FlexWrapper>
