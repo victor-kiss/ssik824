@@ -1,7 +1,8 @@
 "use client"
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Image from 'next/image';
 
 const SkillsCard = styled.div`
   display: flex;
