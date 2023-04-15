@@ -139,7 +139,7 @@ footer.footer > svg{
 @media screen and (max-width:576px){
   img.cropped{
     position:relative;
-    max-width:400px;
+    max-width:380px;
     max-height:250px;
     border-radius: 15px;
   }
