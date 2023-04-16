@@ -1,7 +1,7 @@
 "use client"
-import dynamic from 'next/dynamic';
-import Carousel from 'react-bootstrap/Carousel';
-import Image from 'next/image';
+import dynamic from 'next/dynamic'
+import Carousel from 'react-bootstrap/Carousel'
+import Image from 'next/image'
 
 export default function Certificados() {
   const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
@@ -53,8 +53,8 @@ export default function Certificados() {
             />
       </Carousel.Item>
     </Carousel>
-          </FlexWrapper>
-      </GridWrapper>
+    </FlexWrapper>
+    </GridWrapper>
       <FlexWrapper width="100%" height="100vh" align='center' justify='center' margin='0' padding='0' wrap='no-wrap'  direction='row'>
         <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados"/>
         <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
