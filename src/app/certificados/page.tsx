@@ -1,9 +1,8 @@
 "use client"
 
-
-import Carousel from 'react-bootstrap/Carousel';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
+import Carousel from 'react-bootstrap/Carousel'
+import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 export default function certificados() {
   const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
@@ -18,7 +17,7 @@ export default function certificados() {
           <p>O conteúdo dos cursos variam de acordo com meus interesses e gostos.</p>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' height='100%' margin='0' padding='0' wrap='no-wrap' width='auto'>
-          <Carousel variant="dark" indicators={false} slide={false}>
+          <Carousel variant="dark" indicators={false} slide={false} >
         <Carousel.Item>
             <Image width={650} height={450} 
             className="cropped"
