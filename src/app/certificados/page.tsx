@@ -9,7 +9,7 @@ export default function Certificados(){
   const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
   const Card = dynamic(() => import('../components/card/card'));
   return (
-    <div>
+    <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={false} padding="0">
           <FlexWrapper direction='column' align='baseline' justify='center' height='auto' margin='0' padding='0' wrap='no-wrap' width='auto'>
           <h1>Certificados</h1>
@@ -57,10 +57,10 @@ export default function Certificados(){
     </FlexWrapper>
     </GridWrapper>
       <FlexWrapper width="100%" height="100vh" align='center' justify='center' margin='0' padding='0' wrap='no-wrap'  direction='row'>
-        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados"/>
-        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
-        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites'/>
+        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link='/certificados' />
+        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos' />
+        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites' />
       </FlexWrapper>
-    </div>
+    </>
   )
 }
