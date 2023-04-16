@@ -1,10 +1,9 @@
 "use client"
-
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-export default function certificados(){
+export default function Certificados(){
   const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
   const Card = dynamic(() => import('../components/card/card'));
