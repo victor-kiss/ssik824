@@ -16,7 +16,7 @@ export default function Certificados() {
           <p>O conteúdo dos cursos variam de acordo com meus interesses e gostos.</p>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' height='auto' margin='0' padding='0' wrap='no-wrap' width='auto'>
-          <Carousel variant="dark" indicators={false} slide={false}>
+          <Carousel variant="dark" indicators={false} slide={false} className='w-auto'>
         <Carousel.Item>
             <Image width={650} height={450} 
             className="cropped"
