@@ -4,10 +4,10 @@ import dynamic from 'next/dynamic'
 import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
 
-export default function Certificados(){
-  const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
-  const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
-  const Card = dynamic(() => import('../components/card/card'));
+export default function certificados(){
+  const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'))
+  const GridWrapper = dynamic(() => import('../layout/grid-wrapper'))
+  const Card = dynamic(() => import('../components/card/card'))
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={false} padding="0">
