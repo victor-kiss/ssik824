@@ -15,7 +15,7 @@ export default function Certificados(){
           <p>Aqui estão meus certificados, são frutos de todos os meus estudos, esforço e dedicação. Frequentemente uso os conhecimentos que adquiri para realizar diversas tarefas como programação, design, estudos de documentação e novas ferramentas para web dentre outras tarefas.</p>
           <p>O conteúdo dos cursos variam de acordo com meus interesses e gostos.</p>
           </FlexWrapper>
-          <FlexWrapper direction="column" align="center" justify="center" height="auto" margin="0" padding="0" wrap="no-wrap" width="auto">
+          <FlexWrapper direction="column" align="center" justify="center" height="100%" margin="0" padding="0" wrap="no-wrap" width="auto">
           <Carousel variant="dark" indicators={false} slide={false} >
         <Carousel.Item>
             <Image width={650} height={450} 
