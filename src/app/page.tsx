@@ -19,7 +19,7 @@ const LinkButton = styled.a`
    color:#FFF;
    letter-spacing:1px;
   }
-`;
+`
 
 export default function Home() {
   const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
