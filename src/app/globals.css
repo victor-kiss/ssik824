@@ -101,6 +101,23 @@ a:hover{
   color:#696eff;
 }
 
+a.link-button{
+  color:#FFF;
+  text-decoration:none;
+  border-radius:10px;
+  padding:0.8rem 1.2rem;
+  background:#712CF9;
+  display:block;
+  margin:10px 0;
+  font-weight:100;
+}
+
+a.link-button:hover{
+  font-weight:bold;
+  transition:.1s ease-in-out;
+  color:#FFF;
+  letter-spacing:1px;
+}
 img.cropped{
   position:relative;
   width:600px;
