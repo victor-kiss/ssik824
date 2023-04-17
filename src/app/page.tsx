@@ -18,7 +18,7 @@ export default function Home() {
           <p>Atualmente estudo sistemas para internet na  instituição Estácio de Sá e estou sempre fazendo algo relacionado a T.I, descubra mais abaixo:</p>
 
           <a href={process.env.GITHUB} rel="noreferrer" target="_blank" rel="noreferrer" className="link-button">GitHub</an>
-          <a href={process.env.CODEPEN} rel="noreferrer" target="_blank" rel="noreferrer className="link-button">Code Pen</a>
+          <a href={process.env.CODEPEN} rel="noreferrer" target="_blank" rel="noreferrer" className="link-button">Code Pen</a>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
             <Image src="/ssik1.png" width={800} height={600} className="cropped" alt="home image" loading={'eager'}/>
