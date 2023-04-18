@@ -1,5 +1,5 @@
 import './bootstrap.min.css';
-import './globals.css';
+import './globals.min.css';
 import Navbar from './components/navbar/navbar';
 import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
