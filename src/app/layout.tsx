@@ -1,4 +1,4 @@
-import './bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.min.css';
 import Navbar from './components/navbar/navbar';
 import { Inter } from 'next/font/google';
