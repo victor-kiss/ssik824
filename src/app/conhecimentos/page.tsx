@@ -56,11 +56,6 @@ export default function Conhecimentos() {
             <Image src="/ssik.png" width={800} height={600} className="cropped" alt="home image" loading={'eager'} quality={90}/>
         </FlexWrapper>
       </GridWrapper>
-      <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction="row"  margin='0' padding='0' wrap='no-wrap'>
-        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados" />
-        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
-        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites'/>
-      </FlexWrapper>
     </>
   )
 }
