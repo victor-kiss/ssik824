@@ -30,7 +30,6 @@ const skills:String[] = ["html", "css", "javascript", "react", "next.js", "node"
 export default function Conhecimentos() {
   const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
-  const Card = dynamic(() => import('../components/card/card'));
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
