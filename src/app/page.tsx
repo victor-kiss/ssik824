@@ -6,7 +6,6 @@ import Image from 'next/image';
 export default function Home() {
   const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('./layout/grid-wrapper'));
-  const Card = dynamic(() => import('./components/card/card'));
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
@@ -22,11 +21,6 @@ export default function Home() {
             <Image src="/ssik1.png" width={800} height={600} className="cropped" alt="home image" loading={'eager'}/>
         </FlexWrapper>
       </GridWrapper>
-      <FlexWrapper width="100%" height="100vh" align='center' justify='center' direction='row'  margin='0' padding='0' wrap='no-wrap'>
-        <Card title='Certificados' description='Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades.' link="/certificados"/>
-        <Card title='Conhecimentos' description='Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos' link='/conhecimentos'/>
-        <Card title='Sites' description='Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias.' link='/sites'/>
-      </FlexWrapper>
     </>
   )
 }
