@@ -55,11 +55,6 @@ export default function Certificados(){
     </Carousel>
     </FlexWrapper>
     </GridWrapper>
-      <FlexWrapper width="100vw" height="100vh" align="center" justify="center" margin="0" padding="0" wrap="no-wrap"  direction="row">
-        <Card title="Certificados" description="Descubra meus cursos realizados para ter uma base de conhecimento e aprimorar minhas habilidades." link="/certificados" />
-        <Card title="Conhecimentos" description="Veja todos os meus conhecimentos adquiridos e aplicados na criação dos meus projetos" link="/conhecimentos" />
-        <Card title="Sites" description="Veja todos os meus projetos já realizados de forma cronológica, os projetos possuem diferentes temas e usam diferentes tecnologias." link="/sites" />
-      </FlexWrapper>
-      </div>
+    </div>
   )
 }
