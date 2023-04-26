@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic';
 export default function Certificados(){
   const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
-  const Card = dynamic(() => import('../components/card/card'));
   return (
     <div>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={false} padding="0" >
