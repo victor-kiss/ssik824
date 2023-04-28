@@ -6,14 +6,14 @@
 }
 
 body#bg-dark{
-  background:#242424;
+  background:#202020;
   overflow-x: hidden;
 }
 
 
 nav.navbar{
   width:auto;
-  padding:5px;
+  padding:2px;
   margin-bottom:60px;
   background-color:#154FC1;
 }
@@ -141,7 +141,7 @@ div.card > span{
 
 div.card > a{
   color:#FFF;
-  background:##154FC1;
+  background:#154FC1;
   padding:1rem 1.5rem;
   border-radius:10px;
   font-weight:bold;
