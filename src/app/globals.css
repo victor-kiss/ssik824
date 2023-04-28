@@ -15,7 +15,7 @@ nav.navbar{
   width:auto;
   padding:2px;
   margin-bottom:60px;
-  background-color:#154FC1;
+  background-color:#3669E3;
 }
 
 
@@ -141,7 +141,7 @@ div.card > span{
 
 div.card > a{
   color:#FFF;
-  background:#154FC1;
+  background:#3669E3;
   padding:1rem 1.5rem;
   border-radius:10px;
   font-weight:bold;
