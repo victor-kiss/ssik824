@@ -15,38 +15,10 @@ nav.navbar{
   width:auto;
   padding:5px;
   margin-bottom:60px;
+  background-color:#154FC1;
 }
 
 
-nav.navbar:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(90deg, rgba(113,44,249,1) 0%, rgba(123,143,237,1) 100%);
-  transform: translate3d(0px, 5px, 0) scale(1);
-  filter: blur(20px);
-  opacity: var(0.7);
-  transition: opacity 0.3s;
-  border-radius: inherit;
-}
-
-
-nav.navbar::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  border-radius: inherit;
-}
-      
 
 nav.navbar a.nav-link{
   color:#FFF;
@@ -55,7 +27,6 @@ nav.navbar a.nav-link{
   cursor:pointer;
   font-weight:100;
 }
-
 
 .navbar-light .navbar-toggler {
   border-color:transparent;
@@ -93,12 +64,12 @@ h1,h2,h3,h4,h5,h6{
  a{
   text-decoration: none;
   font-weight: bold;
-  color:#aaadff;
+  color:#62CDFF;
 }
 
  a:hover{
   text-decoration: none;
-  color:#696eff;
+  color:#62CDFF;
 }
 
 a.link-button{
@@ -170,7 +141,7 @@ div.card > span{
 
 div.card > a{
   color:#FFF;
-  background:#712CF9;
+  background:##154FC1;
   padding:1rem 1.5rem;
   border-radius:10px;
   font-weight:bold;
