@@ -13,12 +13,40 @@ body#bg-dark{
 
 nav.navbar{
   width:auto;
-  padding:2px;
+  padding:5px;
   margin-bottom:60px;
-  background-color:#3669E3;
 }
 
 
+nav.navbar:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(113,44,249,1) 0%, rgba(123,143,237,1) 100%);
+  transform: translate3d(0px, 5px, 0) scale(1);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+
+nav.navbar::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
 
 nav.navbar a.nav-link{
   color:#FFF;
@@ -27,6 +55,7 @@ nav.navbar a.nav-link{
   cursor:pointer;
   font-weight:100;
 }
+
 
 .navbar-light .navbar-toggler {
   border-color:transparent;
@@ -64,20 +93,20 @@ h1,h2,h3,h4,h5,h6{
  a{
   text-decoration: none;
   font-weight: bold;
-  color:#62CDFF;
+  color:#aaadff;
 }
 
  a:hover{
   text-decoration: none;
-  color:#62CDFF;
+  color:#696eff;
 }
 
 a.link-button{
   color:#FFF;
   text-decoration:none;
   border-radius:10px;
-  padding:0.8rem 1.1rem;
-  background:#3669E3;
+  padding:0.8rem 1.2rem;
+  background:#712CF9;
   display:block;
   margin:10px 0;
   font-weight:100;
@@ -123,9 +152,7 @@ div.card{
   width: 350px;
   height: 350px;
   border-radius: 10px;
-  background:rgba(255,255,255,0.1);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:#181818;
   padding:15px;
   margin:10px;
 }
@@ -141,7 +168,7 @@ div.card > span{
 
 div.card > a{
   color:#FFF;
-  background:#3669E3;
+  background:#712CF9;
   padding:1rem 1.5rem;
   border-radius:10px;
   font-weight:bold;
@@ -192,4 +219,3 @@ footer.footer > svg{
     margin:20px auto;
   }
 }
-
