@@ -12,7 +12,7 @@ justify-content: space-between;
 width: 400px;
 height:400px;
 border-radius: 10px;
-background:#1f005c;
+background:#212A3E;
 backdrop-filter: blur(5px);
 box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 padding:15px;
