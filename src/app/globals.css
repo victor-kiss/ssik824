@@ -169,7 +169,7 @@ div.card::after {
     right: 0;
     bottom: 0;
     left: 0;
-    background: inherit;
+    background: #242424;
     border-radius: inherit;
 }
   
