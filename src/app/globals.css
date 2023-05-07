@@ -45,6 +45,7 @@ nav.navbar{
   padding:5px;
   margin-bottom:60px;
   background:#181818;
+  z-index:1
 }
 
 nav.navbar a.nav-link{
@@ -183,6 +184,7 @@ div.card{
   background:#181818;
   padding:15px;
   margin:15px;
+  z-index:1;
 }
 
 
