@@ -45,7 +45,7 @@ nav.navbar{
   padding:5px;
   margin-bottom:60px;
   background:#181818;
-  z-index:1
+  z-index:1;
 }
 
 nav.navbar a.nav-link{
