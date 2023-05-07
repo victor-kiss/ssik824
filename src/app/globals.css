@@ -165,7 +165,7 @@ div.card:before {
     bottom: 0;
     left: 0;
     background: linear-gradient(-45deg, #f8acff 0%, #696eff 100% );
-    transform: translate3d(2px, 5px, 2px) scale(1);
+    transform: translate3d(2px, 5px, 2px) scale(0.95);
     filter: blur(20px);
     opacity: var(0.7);
     transition: opacity 0.3s;
