@@ -115,7 +115,7 @@ div.flex-wrapper{
   justify-content: center;
 }
 
-div.card:before {
+.card:before {
     content: "";
     z-index: -99999;
     position: absolute;
@@ -131,7 +131,7 @@ div.card:before {
     border-radius: inherit;
 }
 
-div.card::after {
+.card::after {
     content: "";
     z-index: -1;
     position: absolute;
