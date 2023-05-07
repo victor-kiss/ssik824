@@ -11,12 +11,6 @@ body#bg-dark{
 }
 
 
-nav.navbar{
-  width:auto;
-  padding:5px;
-  margin-bottom:60px;
-  background:#181818;
-}
 
 nav.navbar:before {
     content: "";
@@ -44,6 +38,13 @@ nav.navbar::after {
     left: 0;
     background: inherit;
     border-radius: inherit;
+}
+
+nav.navbar{
+  width:auto;
+  padding:5px;
+  margin-bottom:60px;
+  background:#181818;
 }
 
 nav.navbar a.nav-link{
@@ -143,19 +144,6 @@ div.flex-wrapper{
   justify-content: center;
 }
 
-div.card{
-  display: flex;
-  flex-direction: column;
-  align-items:baseline;
-  justify-content: space-between;
-  width: 350px;
-  height: 350px;
-  border-radius: 10px;
-  background:#181818;
-  padding:15px;
-  margin:15px;
-}
-
 div.card:before {
     content: "";
     z-index: -1;
@@ -183,7 +171,20 @@ div.card::after {
     background: inherit;
     border-radius: inherit;
 }
-        
+  
+div.card{
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  justify-content: space-between;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  background:#181818;
+  padding:15px;
+  margin:15px;
+}
+
 
 div.card > span{
   padding:20px;
