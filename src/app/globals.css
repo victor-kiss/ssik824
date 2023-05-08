@@ -15,8 +15,36 @@ nav.navbar{
   width:auto;
   padding:5px;
   margin-bottom:60px;
-  background:#181818;
 }
+
+.navbar:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #f8acff 0%, #696eff 100% );
+    transform: translate3d(2px, 5px, 2px) scale(1);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.navbar::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #181818;
+    border-radius: inherit;
+}
+  
 
 nav.navbar a.nav-link{
   color:#FFF;
