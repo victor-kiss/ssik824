@@ -166,6 +166,8 @@ footer.footer{
 
 footer.footer > span{
   font-size:18px;
+  display:block;
+  margin:10px 0;
 }
 
 footer.footer > svg{
