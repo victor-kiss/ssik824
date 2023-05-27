@@ -2,8 +2,7 @@
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
-import Image from 'next/image';
-
+import Spline from '@splinetool/react-spline';
 const SkillsCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,17 +10,16 @@ const SkillsCard = styled.div`
   justify-content: center;
   background:#202020;
   width:300px;
-  height:280px;
-  border-radius:10px;
+  height:300px;
+  border-top-left-radius:10px;
+  border-bottom-right-radius:10px;
   margin:20px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
  
   span{
     color:#FFF;
     text-transform:uppercase;
-    letter-spacing:1px;
-    font-size:16px;
-    text-shadow: 1px 1px 10px #FFF;
+    font-size:18px;
+    font-weight:bold;
   }
 `
 
@@ -52,7 +50,7 @@ export default function Conhecimentos() {
         </Carousel>
         </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
-            <Image src="/alien.svg" width={800} height={640} className="cropped" alt="home image" loading={'eager'} quality={90}/>
+          <Spline scene='https://prod.spline.design/LVsBrzilPlW84Vfg/scene.splinecode'/>
         </FlexWrapper>
       </GridWrapper>
     </>

@@ -5,8 +5,7 @@
   font-family: 'Inter', sans-serif;
 }
 
-body#bg-dark{
-  background:#181818;
+body{
   overflow-x: hidden;
 }
 
@@ -54,25 +53,23 @@ nav.navbar a.nav-link:focus,nav.navbar a.nav-link:hover{
 
 p{
   font-weight: 100;
-  color:#FFF;
   font-size:17px;
   z-index:1;
 }
 
 h1,h2,h3,h4,h5,h6{
-  color:#FFF;
   font-weight: 600; 
 }
 
  a{
   text-decoration: none;
   font-weight: bold;
-  color:#aaadff;
+  color:#712CF9;
 }
 
  a:hover{
   text-decoration: none;
-  color:#696eff;
+  color:#712CF9;
 }
 
 a.link-button{
@@ -131,6 +128,7 @@ div.card{
   background:#202020;
   padding:15px;
   margin:0 20px;
+  color:#FFF;
 }
 
 
@@ -167,11 +165,13 @@ footer.footer{
 footer.footer > span{
   font-size:18px;
   display:block;
-  margin:10px 0;
 }
 
 footer.footer > svg{
   vertical-align:middle;
+}
+footer.footer > span > a{
+  color:#ad84ff;
 }
 
 @media screen and (max-width:576px){

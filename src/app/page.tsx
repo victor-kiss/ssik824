@@ -1,8 +1,7 @@
 "use client"
 import dynamic from 'next/dynamic';
-import styled from 'styled-components';
 import Image from 'next/image';
-
+import Spline from '@splinetool/react-spline';
 export default function Home() {
   const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('./layout/grid-wrapper'));
@@ -17,9 +16,9 @@ export default function Home() {
           <a href={process.env.GITHUB} rel="noreferrer" target="_blank" className="link-button">GitHub</a>
           <a href={process.env.CODEPEN} rel="noreferrer" target="_blank" className="link-button">Code Pen</a>
           </FlexWrapper>
-          <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
-            <Image src="/aliens.svg" width={800} height={640} className="cropped" alt="home image" loading={'eager'}/>
-        </FlexWrapper>
+          <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
+            <Spline scene='https://prod.spline.design/RvM5JXTUfaonae5q/scene.splinecode'/>
+          </FlexWrapper>
       </GridWrapper>
     </>
   )

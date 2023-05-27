@@ -1,8 +1,9 @@
 "use client"
 
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
-import styled from 'styled-components'
+import Spline from '@splinetool/react-spline';
+import styled from 'styled-components';
 
 const ProjectCard = styled.div`
 display: flex;
@@ -37,6 +38,7 @@ a{
 }
 p{
   padding:5px;
+  color:#FFF;
 }
 @media screen and (max-width: 768px){
     position:relative;
@@ -87,7 +89,6 @@ const projectData = [
 export default function Sites() {
   const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
-  const LaptopScene = dynamic(() => import('../scenes/laptop-scene'));
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
@@ -110,7 +111,7 @@ export default function Sites() {
             }
         </Carousel>
         </FlexWrapper>
-         <LaptopScene/>
+        <Spline scene='https://prod.spline.design/XnQPwAP4THaNxJbv/scene.splinecode'/>
       </GridWrapper>
     </>
   )
