@@ -1,10 +1,12 @@
 "use client"
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
-import Spline from '@splinetool/react-spline';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Preload, ScrollControls } from '@react-three/drei';
+
 export default function Home() {
   const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('./layout/grid-wrapper'));
+  const Molang = dynamic(() => import('./models/molang'));
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
@@ -17,7 +19,11 @@ export default function Home() {
           <a href={process.env.CODEPEN} rel="noreferrer" target="_blank" className="link-button">Code Pen</a>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
-            <Spline scene='https://prod.spline.design/RvM5JXTUfaonae5q/scene.splinecode'/>
+          <Canvas camera={{position:[5,0,20]}}>
+          <Molang/>
+          <OrbitControls/>
+          <Preload all={true}/>
+          </Canvas>
           </FlexWrapper>
       </GridWrapper>
     </>
