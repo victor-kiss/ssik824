@@ -22,7 +22,6 @@ export default function RootLayout({
       <head>
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
         <style data-href="https://fonts.googleapis.com/css2?family=Inter">
-
         </style>
       </head>
       <body>
