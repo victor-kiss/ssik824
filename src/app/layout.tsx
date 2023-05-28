@@ -1,12 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import Navbar from './components/navbar/navbar';
-import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { Metadata } from 'next';
 
-
-const inter = Inter({ subsets: ['latin'] });
 export const metadata:Metadata = {
     title:'ssik824',
     authors:[{name:'ssik824'}],
@@ -24,8 +21,11 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <meta name="p:domain_verify" content="ae78aae05c72e57e168bfb14302ac101"/>
+        <style data-href="https://fonts.googleapis.com/css2?family=Inter">
+
+        </style>
       </head>
-      <body className={inter.className}>
+      <body>
       <header>
         <Navbar/>
       </header>

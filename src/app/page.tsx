@@ -4,9 +4,9 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload} from '@react-three/drei';
 
 export default function Home() {
-  const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'),{ssr:false});
-  const GridWrapper = dynamic(() => import('./layout/grid-wrapper'),{ssr:false});
-  const Molang = dynamic(() => import('./models/molang'),{ssr:false});
+  const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
+  const GridWrapper = dynamic(() => import('./layout/grid-wrapper'));
+  const Molang = dynamic(() => import('./models/molang'));
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
