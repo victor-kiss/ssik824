@@ -2,7 +2,6 @@
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
-import Spline from '@splinetool/react-spline';
 const SkillsCard = styled.div`
   display: flex;
   flex-direction: column;

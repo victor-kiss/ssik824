@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
-import Spline from '@splinetool/react-spline';
 import styled from 'styled-components';
 
 const ProjectCard = styled.div`
