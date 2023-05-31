@@ -11,10 +11,6 @@
   "dependencies": {
     "@react-three/drei": "^9.58.1",
     "@react-three/fiber": "^8.12.0",
-    "@splinetool/loader": "^0.9.345",
-    "@splinetool/r3f-spline": "^1.0.2",
-    "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.340",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-bootstrap": "^0.32.32",
@@ -24,6 +20,7 @@
     "bootstrap-icons": "^1.10.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "lodash": "^4.17.21",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -33,6 +30,7 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.195",
     "@types/styled-components": "^5.1.26"
   }
 }
