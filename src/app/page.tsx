@@ -25,7 +25,7 @@ export default function Home() {
           <Canvas camera={{position:[5,0,5]}}>
           <ambientLight intensity={0.10} color={'#f3f4f5'}/>
          
-          <Cube />
+          <Cube/>
           <Preload all={true}/>
           </Canvas>
           </FlexWrapper>
