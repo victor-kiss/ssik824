@@ -111,7 +111,6 @@ export default function Sites() {
             }
         </Carousel>
         </FlexWrapper>
-        <Spline scene='https://prod.spline.design/XnQPwAP4THaNxJbv/scene.splinecode'/>
       </GridWrapper>
     </>
   )

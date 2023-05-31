@@ -50,7 +50,7 @@ export default function Conhecimentos() {
         </Carousel>
         </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
-          <Spline scene='https://prod.spline.design/LVsBrzilPlW84Vfg/scene.splinecode'/>
+         
         </FlexWrapper>
       </GridWrapper>
     </>
