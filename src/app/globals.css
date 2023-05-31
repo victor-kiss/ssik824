@@ -43,7 +43,7 @@ div.navbar-nav a.nav-link{
 
 
 nav.navbar a.nav-link:focus,nav.navbar a.nav-link:hover{
-  color:#FFF; 
+  color:#ad84ff; 
   font-weight:600;
   letter-spacing:1px;
   font-size:20px;
@@ -61,13 +61,13 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 600; 
 }
 
- a{
+a{
   text-decoration: none;
   font-weight: bold;
   color:#712CF9;
 }
 
- a:hover{
+a:hover{
   text-decoration: none;
   color:#712CF9;
 }
