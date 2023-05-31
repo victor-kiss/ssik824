@@ -23,7 +23,7 @@ export default function Home() {
           <Link href="https://codepen.io/victor-kiss" rel="noreferrer" target="_blank" className="link-button">Code Pen</Link>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
-          <Canvas camera={{position:[5,0,5]}} frameloop='demand'>
+          <Canvas camera={{position:[0,0,5]}} frameloop='demand'>
           <Cube/>
           <Preload all={true}/>
           </Canvas>
