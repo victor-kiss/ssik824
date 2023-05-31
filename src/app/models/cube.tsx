@@ -12,9 +12,8 @@ export default function Cube(){
     })
     return(
     <mesh scale={1.5} ref={ref}>
-        <Box args={[2,2,2]} >
+        <Box args={[2,2,2]}/>
         <meshBasicMaterial color="#712CF9" wireframe />
-      </Box>
     </mesh>
     )
 }
