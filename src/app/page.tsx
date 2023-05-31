@@ -1,4 +1,5 @@
 "use client"
+
 import dynamic from 'next/dynamic';
 import { Canvas } from '@react-three/fiber';
 import {Preload} from '@react-three/drei';
