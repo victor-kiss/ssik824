@@ -22,9 +22,8 @@ export default function Home() {
           <a href={process.env.CODEPEN} rel="noreferrer" target="_blank" className="link-button">Code Pen</a>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
-          <Canvas camera={{position:[5,0,5]}}>
+          <Canvas camera={{position:[5,0,5]}} frameloop='demand'>
           <ambientLight intensity={0.10} color={'#f3f4f5'}/>
-         
           <Cube/>
           <Preload all={true}/>
           </Canvas>

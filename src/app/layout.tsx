@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import Navbar from './components/navbar/navbar';
 import Link from 'next/link';
