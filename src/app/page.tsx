@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import { Canvas } from '@react-three/fiber';
-import {Preload} from '@react-three/drei';
+import {AdaptiveDpr, Preload} from '@react-three/drei';
 import Link from 'next/link';
 
 
@@ -26,6 +26,7 @@ export default function Home() {
           <Canvas camera={{position:[0,0,5]}} frameloop='demand'>
           <Cube/>
           <Preload all={true}/>
+          <AdaptiveDpr pixelated={true} />
           </Canvas>
           </FlexWrapper>
       </GridWrapper>
