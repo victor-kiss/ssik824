@@ -21,7 +21,7 @@ export default function Home() {
           <Link href="https://codepen.io/victor-kiss" rel="noreferrer" target="_blank" className="link-button">Code Pen</Link>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
-          <Image src="/home.svg" width={800} height={800} alt="home image"/>
+          <Image src="/home.svg" width={800} height={800} alt="home image" className="cropped" loading='eager'/>
           </FlexWrapper>
       </GridWrapper>
     </>

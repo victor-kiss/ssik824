@@ -50,7 +50,7 @@ export default function Conhecimentos() {
         </Carousel>
         </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='auto' margin='0' padding='0' wrap='no-wrap'>
-          <Image src="/robot.svg" width={800} height={800} alt="home image"/>
+          <Image src="/robot.svg" width={800} height={800} alt="robot image" className="cropped" loading='eager'/>
         </FlexWrapper>
       </GridWrapper>
     </>

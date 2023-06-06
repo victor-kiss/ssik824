@@ -113,7 +113,7 @@ export default function Sites() {
         </Carousel>
         </FlexWrapper>
         <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
-          <Image src="/robot2.svg" width={800} height={800} alt="robot 2"/>
+          <Image src="/robot2.svg" width={800} height={800} alt="robot 2" className="cropped" loading='eager'/>
           </FlexWrapper>
       </GridWrapper>
     </>
