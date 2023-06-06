@@ -1,8 +1,7 @@
 "use client"
 
 import dynamic from 'next/dynamic';
-import { Canvas } from '@react-three/fiber';
-import {AdaptiveDpr, Preload} from '@react-three/drei';
+import Image from 'next/image';
 import Link from 'next/link';
 
 
@@ -10,7 +9,6 @@ import Link from 'next/link';
 export default function Home() {
   const FlexWrapper = dynamic(() => import('./layout/flex-wrapper'));
   const GridWrapper = dynamic(() => import('./layout/grid-wrapper'));
-  const Cube = dynamic(() => import('./models/cube'));
   return (
     <>
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" padding="0" mobileReverse={true}>
@@ -23,11 +21,7 @@ export default function Home() {
           <Link href="https://codepen.io/victor-kiss" rel="noreferrer" target="_blank" className="link-button">Code Pen</Link>
           </FlexWrapper>
           <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
-          <Canvas camera={{position:[0,0,5]}} frameloop='demand'>
-          <Cube/>
-          <Preload all={true}/>
-          <AdaptiveDpr pixelated={true} />
-          </Canvas>
+          <Image src="/home.svg" width={800} height={800} alt="home image"/>
           </FlexWrapper>
       </GridWrapper>
     </>

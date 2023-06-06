@@ -3,6 +3,8 @@
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const ProjectCard = styled.div`
 display: flex;
@@ -12,7 +14,7 @@ justify-content: space-between;
 width: 400px;
 height:400px;
 border-radius: 10px;
-background:#242424;
+background:#282828;
 backdrop-filter: blur(5px);
 box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 padding:15px;
@@ -93,7 +95,7 @@ export default function Sites() {
       <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
           <FlexWrapper direction='column' align='baseline' justify='center' width="auto" height="auto"  wrap="wrap" margin="0" padding="0">
           <h1>Sites</h1>
-          <p>Aqui estão alguns projetos feitos por mim ao longo de meus estudos, usam diversas tecnologias além de abordar diversos temas, os projetos estão em ordem cronológica, desde meu primeiro até o mais recente:</p>
+          <p>Aqui estão alguns projetos feitos por mim ao longo de meus estudos, usam diversas tecnologias, abordam  diversos temas e possuem projetos totalmente em inglês. Os projetos estão em ordem cronológica, desde meu primeiro até o mais recente:</p>
 
           <Carousel slide={false} indicators={false}>
          
@@ -103,13 +105,16 @@ export default function Sites() {
                  <ProjectCard>
                   <span>{project.title}</span>
                   <p>{project.description}</p>
-                  <a href={project.link} target="_blank" rel="noreferrer">Ver site</a>
+                  <Link href={project.link} target="_blank" rel="noreferrer">Ver site</Link>
                  </ProjectCard>
                  </Carousel.Item>
                ))
             }
         </Carousel>
         </FlexWrapper>
+        <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
+          <Image src="/robot2.svg" width={800} height={800} alt="robot 2"/>
+          </FlexWrapper>
       </GridWrapper>
     </>
   )

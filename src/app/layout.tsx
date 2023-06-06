@@ -8,7 +8,7 @@ export const metadata:Metadata = {
     title:'ssik824',
     authors:[{name:'ssik824'}],
     description:'Venha conhecer um pouco mais sobre ssik824!',
-    generator:'victor kiss, ssik824, desenvolvedor web, front-end, web, web-design, web projects, projetos web, github projects',
+    generator:'victor kiss, ssik824, desenvolvedor web, front-end,web-design, web projects, projetos web, github projects',
 };
 
 
