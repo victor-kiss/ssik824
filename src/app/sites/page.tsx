@@ -2,52 +2,10 @@
 
 import dynamic from 'next/dynamic';
 import Carousel from 'react-bootstrap/Carousel';
-import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const ProjectCard = styled.div`
-display: flex;
-flex-direction: column;
-align-items:baseline;
-justify-content: space-between;
-width: 400px;
-height:400px;
-border-radius: 10px;
-background:#282828;
-backdrop-filter: blur(5px);
-box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-padding:15px;
-margin:50px;
 
-span{
-    padding:20px;
-    font-size:20px;
-    font-weight: bold;
-    color:#FFF;
-    margin:0 auto;
-    letter-spacing: 1px;
-}
-
-a{
-    color:#FFF;
-    background:#696eff;
-    padding:1rem 1.5rem;
-    border-radius:10px;
-    font-weight:100;
-    margin:10px 0;
-}
-p{
-  padding:5px;
-  color:#FFF;
-}
-@media screen and (max-width: 768px){
-    position:relative;
-    width:calc(80%);
-    height:auto;
-    margin:20px auto;
-}
-`
 
 const projectData = [
     {
@@ -102,11 +60,11 @@ export default function Sites() {
             {
                projectData.map((project, index) => (
                 <Carousel.Item key={index}>
-                 <ProjectCard>
+                 <div className="project-card">
                   <span>{project.title}</span>
                   <p>{project.description}</p>
                   <Link href={project.link} target="_blank" rel="noreferrer">Ver site</Link>
-                 </ProjectCard>
+                 </div>
                  </Carousel.Item>
                ))
             }
