@@ -1,10 +1,9 @@
 "use client"
 
-import dynamic from 'next/dynamic';
-import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Carousel from 'react-bootstrap/Carousel';
 
 
 const projectData = [
@@ -43,37 +42,33 @@ const projectData = [
         description:'3d place is a web project focused on the integration between 3d models and websites. Come see the result!',
         link:'https://3dplace.vercel.app/'
     }
-]
+];
 
 export default function Sites() {
-  const FlexWrapper = dynamic(() => import('../layout/flex-wrapper'));
-  const GridWrapper = dynamic(() => import('../layout/grid-wrapper'));
   return (
-    <>
-      <GridWrapper width="100vw" height="100vh" margin="40px 60px" mobileReverse={true} padding="0">
-          <FlexWrapper direction='column' align='baseline' justify='center' width="auto" height="auto"  wrap="wrap" margin="0" padding="0">
-          <h1>Sites</h1>
-          <p>Aqui estão alguns projetos feitos por mim ao longo de meus estudos, usam diversas tecnologias, abordam  diversos temas e possuem projetos totalmente em inglês. Os projetos estão em ordem cronológica, desde meu primeiro até o mais recente:</p>
+      <>
+      <div className='grid-wrapper'>
+      <div className='flex-column-wrapper'>
+        <h1>Sites</h1>
+        <p>Aqui estão alguns projetos feitos por mim ao longo de meus estudos, usam diversas tecnologias, abordam  diversos temas e possuem projetos totalmente em inglês. Os projetos estão em ordem cronológica, desde meu primeiro até o mais recente:</p>
 
-          <Carousel slide={false} indicators={false}>
-         
-            {
-               projectData.map((project, index) => (
-                <Carousel.Item key={index}>
-                 <div className="project-card">
-                  <span>{project.title}</span>
-                  <p>{project.description}</p>
-                  <Link href={project.link} target="_blank" rel="noreferrer">Ver site</Link>
-                 </div>
-                 </Carousel.Item>
-               ))
-            }
+        <Carousel slide={false} indicators={false} variant='dark'>
+
+          {projectData.map((project, index) => (
+            <Carousel.Item key={index}>
+              <div className="project-card">
+                <span>{project.title}</span>
+                <p>{project.description}</p>
+                <Link href={project.link} target="_blank" rel="noreferrer">Ver site</Link>
+              </div>
+            </Carousel.Item>
+          ))}
         </Carousel>
-        </FlexWrapper>
-        <FlexWrapper direction='column' align='center' justify='center' width='100%' height='100%' margin='0' padding='0' wrap='no-wrap'>
-          <Image src="/robot2.svg" width={800} height={800} alt="robot 2" className="cropped" loading='eager'/>
-          </FlexWrapper>
-      </GridWrapper>
+      </div>
+    <div className='flex-column-wrapper'>
+        <Image src="/robot2.svg" width={800} height={800} alt="robot 2" className="cropped" loading='eager' priority={true} />
+    </div>
+  </div>
     </>
   )
 }
