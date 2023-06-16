@@ -12,7 +12,7 @@ export default function Conhecimentos() {
       <div className='flex-column-wrapper'>
        <h1>Conhecimentos</h1>
         <p>Através da realização de cursos e projetos pude construir uma base de habilidades que frequentemente uso na minha área de atuação, os conhecimentos variam de acordo com meus gostos e interesses mas todos são voltados para a área de tecnologia e estou frenquentemente aprimorando e aprendendo novas coisas para aumentar cada vez mais minha base de conhecimento. Veja minhas habilidades abaixo:</p>
-        <Carousel slide={false} indicators={false}>
+        <Carousel slide={false} indicators={false} variant='dark'>
           {
             skills.map((skill, index) => 
               (
